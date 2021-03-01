@@ -1,0 +1,97 @@
+.pslide_container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+.pslide {
+  display: none;
+}
+
+/*
+.pfade
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+*/
+
+/* Next and Prev buttons */
+.pprev,
+.pnext {
+  cursor: pointer;
+  position: absolute;
+
+  top: 50%;
+  /* bottom: 0; */
+  width: auto;
+  padding: 10px;
+  /* margin-top: -22px; */
+  color: #ffffff;
+  background-color: #999999;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Set Next button to the right */
+.pnext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add background color with see-through */
+.pprev:hover,
+.pnext:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text */
+.pnn {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  /* top: 0; */
+  /* top: 110px; */
+  bottom: 0px;
+  background-color: #999999;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.tthumb {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table.tthumb td {
+  padding: 1px 1px 0px 0px;
+  vertical-align: top;
+}
+
+/* Add transparency effect for thumbs */
+.pthumb {
+  opacity: 0.6;
+}
+
+.active,
+.pthumb:hover {
+  opacity: 1;
+}
